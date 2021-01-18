@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.javanibble</groupId>
-	<artifactId>springevents</artifactId>
+	<artifactId>spring_events_synchronous</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring Events</name>
+	<name>Spring Events - Synchronous</name>
 	<description>Example Project for Spring Events</description>
 
 	<properties>
