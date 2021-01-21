@@ -13,9 +13,8 @@ public class AnnotatedSyncEventListener {
 
     private static final Logger logger = LoggerFactory.getLogger(AnnotatedSyncEventListener.class);
 
-
     @EventListener
-    public void handleEvent(BasicSpringEvent basicEvent) {
+    public void handleAnnotatedEvent(BasicSpringEvent basicEvent) {
         logger.info("AnnotatedSyncEventListener: Receive Event: "+ basicEvent.getMessage());
     }
 
