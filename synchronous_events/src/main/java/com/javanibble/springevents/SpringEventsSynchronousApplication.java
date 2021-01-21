@@ -1,6 +1,6 @@
 package com.javanibble.springevents;
 
-import com.javanibble.springevents.synchronous.BasicSpringEventPublisher;
+import com.javanibble.springevents.synchronous.SpringEventPublisher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ public class SpringEventsSynchronousApplication implements CommandLineRunner {
 	private static final Logger logger = LoggerFactory.getLogger(SpringEventsSynchronousApplication.class);
 
 	@Autowired
-	private BasicSpringEventPublisher basicSpringEventPublisher;
+	private SpringEventPublisher basicSpringEventPublisher;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringEventsSynchronousApplication.class, args);
