@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 /**
- * The BasicSpringEventListener is an ApplicationListener that listens to a BasicSpringEvent. The ApplicationListener is
+ * The AsynchronousEventListener is an ApplicationListener that listens to a MessageEvent. The ApplicationListener is
  * based on the standard java.util.EventListener interface for the Observer design pattern.
  *
  * The onApplicationEvent handles the application event, which in this case is the BasicSpringEvent. The Listener has
