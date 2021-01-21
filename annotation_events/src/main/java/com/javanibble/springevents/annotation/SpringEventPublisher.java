@@ -7,11 +7,11 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
 /**
- * The SpringEventPublisher class uses the creates a BasicSpringEvent which is an ApplicationEvent. The BasicSpringEvent
- * is initialised with the message that is the event data for the event listeners. The BasicSpringEvent is also
+ * The SpringEventPublisher class uses the creates a MessageEvent which is an ApplicationEvent. The MessageEvent
+ * is initialised with the message that is the event data for the event listeners. The MessageEvent is also
  * initialised with a reference to the current instance of the SpringEventPublisher class.
  *
- * The SpringEventPublisher publish the BasicSpringEvent which notifies all matching listeners registered with this
+ * The SpringEventPublisher publish the MessageEvent which notifies all matching listeners registered with this
  * application of an application event.
  *
  * The publication of the event is effectively a hand-off to the multicaster and does not imply synchronous/asynchronous
@@ -28,7 +28,7 @@ public class SpringEventPublisher {
     public void publishBasicEvent(final String message) {
         logger.info("SpringEventPublisher: Publish Event Started.");
 
-        BasicSpringEvent basicSpringEvent = new BasicSpringEvent(this, message);
+        MessageEvent basicSpringEvent = new MessageEvent(this, message);
         applicationEventPublisher.publishEvent(basicSpringEvent);
 
         logger.info("SpringEventPublisher: Publish Event Complete.");
