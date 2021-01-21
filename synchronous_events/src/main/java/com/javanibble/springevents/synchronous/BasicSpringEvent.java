@@ -1,4 +1,4 @@
-package com.javanibble.springevents.annotation;
+package com.javanibble.springevents.synchronous;
 
 import org.springframework.context.ApplicationEvent;
 

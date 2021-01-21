@@ -1,4 +1,4 @@
-package com.javanibble.springevents.annotation;
+package com.javanibble.springevents.synchronous;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
