@@ -1,6 +1,6 @@
 package com.javanibble.springevents;
 
-import com.javanibble.springevents.synchronous.BasicSpringEventPublisher;
+import com.javanibble.springevents.annotation.BasicSpringEventPublisher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.javanibble.springevents.synchronous;
+package com.javanibble.springevents.annotation;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,8 +26,9 @@ public class BasicSpringEventPublisher {
     private ApplicationEventPublisher applicationEventPublisher;
 
     public void publishBasicEvent(final String message) {
-        logger.info("BasicSpringEventPublisher: Publish event.");
+        logger.info("BasicSpringEventPublisher: Publish Event Started.");
         BasicSpringEvent basicSpringEvent = new BasicSpringEvent(this, message);
         applicationEventPublisher.publishEvent(basicSpringEvent);
+        logger.info("BasicSpringEventPublisher: Publish Event Complete.");
     }
 }
