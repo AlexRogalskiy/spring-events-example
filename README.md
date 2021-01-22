@@ -9,3 +9,6 @@ serve as a means to exchange information between loosely coupled components.
 * [Application Events - Annotation-driven](annotation_events)
 * [Application Events - Generics](generics_events)
 * [Application Events - Spring Framework Events](framework_events)
+
+## License
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
