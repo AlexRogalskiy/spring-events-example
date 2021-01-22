@@ -8,4 +8,4 @@ serve as a means to exchange information between loosely coupled components.
 * [Application Events - Asynchronous](asynchronous_events)
 * [Application Events - Annotation-driven](annotation_events)
 * [Application Events - Generics](generics_events)
-* [Spring Framework Events](framework_events)
+* [Application Events - Spring Framework Events](framework_events)
